@@ -18,7 +18,7 @@ Object.entries(object).forEach(([key, value]) => console.log(`${key} : ${value}`
 
 
 // Clone an object
-let target;
+let target = {};
 Object.assign(target, source);
 
 console.log(target)
