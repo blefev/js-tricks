@@ -56,7 +56,7 @@ Object.defineProperty(Array.prototype, 'first', {
 
 Object.defineProperty(Array.prototype, 'last', {
     get: function() {
-        return this[0];
+        return this[this.length-1];
     }
 });
 
