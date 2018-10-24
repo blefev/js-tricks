@@ -60,5 +60,5 @@ Object.defineProperty(Array.prototype, 'last', {
     }
 });
 
-[1,2,3,4,5].first // -> 5
+[1,2,3,4,5].last // -> 5
 ```
