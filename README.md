@@ -76,12 +76,12 @@ Proxies let you send object property access through a handler.
 
 You could use a recursive proxy like so:
 ```javacript
-const obj = {
+const o = {
     a: 1,
     b: 2
 };
 
-const proxy = new Proxy(obj, {
+const proxy = new Proxy(o, {
     get: function(obj, prop) {
         return obj[prop] || prox;
     }
