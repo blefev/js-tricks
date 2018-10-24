@@ -1,6 +1,6 @@
 # js-tricks
 
-A collection of useful javascript tricks.
+A collection of ~~useful~~ *interesting* javascript tricks.
 
 ## Cloning an object
 ```javascript
@@ -69,3 +69,29 @@ console.log `look ma, no parentheses!`
 // -> ["hello there", raw: Array(1)]
 ```
 ... but the output might not be what you expect.
+
+# Proxies
+
+Proxies let you send object property access through a handler.
+
+You could use a recursive proxy like so:
+```javacript
+const obj = {
+    a: 1,
+    b: 2
+};
+
+const proxy = new Proxy(obj, {
+    get: function(obj, prop) {
+        return obj[prop] || prox;
+    }
+});
+
+proxy.a // -> 1
+proxy.b // -> 2
+proxy.c // -> Proxy {a: 1, b: 2}
+
+proxy.any.level.of.nested.properties // -> 1
+proxy.any.level.of.nested.properties // -> 2
+proxy.any.level.of.nested.properties // -> Proxy {a: 1, b: 2}
+```
