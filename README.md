@@ -70,7 +70,7 @@ console.log `look ma, no parentheses!`
 ```
 ... but the output might not be what you expect.
 
-# Proxies
+## Proxies
 
 Proxies let you send object property access through a handler.
 
