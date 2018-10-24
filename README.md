@@ -83,7 +83,7 @@ const o = {
 
 const proxy = new Proxy(o, {
     get: function(obj, prop) {
-        return obj[prop] || prox;
+        return obj[prop] || proxy;
     }
 });
 
