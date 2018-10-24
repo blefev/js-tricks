@@ -41,7 +41,7 @@ console.log(clone);
 ```
 
 ## Call functions without parentheses
-It should go without saying, but you this is just for fun; you shouldn't use it for anything serious.
+It should go without saying, but this is just for fun; you shouldn't use it for anything serious.
 
 Let's say we want to have some Ruby-like syntactic sugar, like maybe array.first and array.last. Here's how to achieve that with js:
 
