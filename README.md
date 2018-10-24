@@ -75,7 +75,7 @@ console.log `look ma, no parentheses!`
 Proxies let you send object property access through a handler.
 
 You could use a recursive proxy like so:
-```javacript
+```javascript
 const o = {
     a: 1,
     b: 2
