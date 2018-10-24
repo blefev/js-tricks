@@ -2,6 +2,7 @@
 
 A collection of useful javascript tricks.
 
+## Cloning an object
 ```javascript
 let object = {
     a: 1,
@@ -39,7 +40,7 @@ console.log(clone);
 // -> {a: 1, c:3}
 ```
 
-# Call functions without parentheses
+## Call functions without parentheses
 It should go without saying, but you this is just for fun; you shouldn't use it for anything serious.
 
 Let's say we want to have some Ruby-like syntactic sugar, like maybe array.first and array.last. Here's how to achieve that with js:
