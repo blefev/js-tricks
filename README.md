@@ -38,3 +38,26 @@ let clone = Object.entries().reduce((obj, [key,value]) => {
 console.log(clone);
 // -> {a: 1, c:3}
 ```
+
+# Call functions without parentheses
+It should go without saying, but you this is just for fun; you shouldn't use it for anything serious.
+
+Let's say we want to have some Ruby-like syntactic sugar, like maybe array.first and array.last. Here's how to achieve that with js:
+
+```javascript
+Object.defineProperty(Array.prototype, 'first', {
+    get: function() {
+        return this[0];
+    }
+});
+
+[1,2,3,4,5].first // -> 1
+
+Object.defineProperty(Array.prototype, 'last', {
+    get: function() {
+        return this[0];
+    }
+});
+
+[1,2,3,4,5].first // -> 5
+```
