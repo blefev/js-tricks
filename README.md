@@ -62,3 +62,10 @@ Object.defineProperty(Array.prototype, 'last', {
 
 [1,2,3,4,5].last // -> 5
 ```
+
+Any function can be called with a template literal without parentheses.
+```javascript
+console.log `look ma, no parentheses!`
+// -> ["hello there", raw: Array(1)]
+```
+... but the output might not be what you expect.
