@@ -91,7 +91,7 @@ proxy.a // -> 1
 proxy.b // -> 2
 proxy.c // -> Proxy {a: 1, b: 2}
 
-proxy.any.level.of.nested.properties // -> 1
-proxy.any.level.of.nested.properties // -> 2
-proxy.any.level.of.nested.properties // -> Proxy {a: 1, b: 2}
+proxy.any.level.of.nested.properties.a // -> 1
+proxy.any.level.of.nested.properties.b // -> 2
+proxy.any.level.of.nested.properties.anyInvalidProperty // -> Proxy {a: 1, b: 2}
 ```
