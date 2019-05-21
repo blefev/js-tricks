@@ -29,11 +29,11 @@ console.log(target)
 // Selectively clone an object
 const desiredKeys = ['a', 'c'];
 
-let clone = Object.entries().reduce((obj, [key,value]) => {
+let clone = Object.entries(object).reduce((clone, [key,value]) => {
     if (desiredKeys.includes(key)) {
-        obj[key] = value;
+        clone[key] = value;
     }
-    return obj;
+    return clone;
 } ,{});
 
 console.log(clone);
